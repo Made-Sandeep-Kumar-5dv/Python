@@ -1,0 +1,576 @@
+﻿Basic Questions:
+1.
+Rahul buys 4 notebooks, each costing ₹50. Calculate the total cost.
+books = 4
+cost_per_book = 50
+total_cost = books*cost_per_book
+print(total_cost)  # 200
+2.
+A student scored 85 marks in Math and 90 marks in Science. Find the total marks.
+maths_marks = 85
+sci_marks = 90
+total_marks = maths_marks + sci_marks
+print(total_marks) #175
+3.
+A water tank contains 120 liters of water. 35 liters are used. How much water is left?
+water_in_liters = 120
+used_water = 35
+remaining_water = water_in_liters - used_water
+print(remaining_water) # 85 liters
+4.
+A farmer has 18 rows of plants, with 25 plants in each row. Find the total number of plants.
+plants_in_rows = 18
+plants_per_row = 25
+total_no_plants = plants_in_rows * plants_per_row
+print(total_no_plants) # 450
+5.
+A pizza costs ₹480 and is shared equally among 6 friends. How much should each friend pay?
+pizza_cost = 480
+friends = 6
+amount_per_frnd = pizza_cost / friends
+print(amount_per_friend) # 80.0
+6.
+A teacher has 53 chocolates and wants to distribute them equally among 5 students. How many chocolates will each student receive? (Use floor division)
+chocolates = 53
+students = 5
+chocolates_per_student = chocolates // students
+print(chocolates_per_student) # 10
+7.
+A shopkeeper has 95 apples and packs them into boxes that hold 10 apples each. How many apples will remain unpacked?
+apples = 95
+boxes = 10
+apples_per_box = apples % boxes
+print(“apples_per_box”)
+8.
+Find the square of 14.
+print(14**2) # 196
+9.
+A runner completes 8 laps, each 400 meters long. Find the total distance covered.
+laps = 8
+each_lap_in_meters = 400
+total_distance = laps*each_lap_in_meters
+print(total_distance) # 3200
+10.
+A train travels 360 km in 6 hours. Find the average speed.
+distance_km = 360
+time_in_hrs = 6
+avg_speed = distance_km / time_in_hrs
+print(avg_speed) # 60.0
+11.
+A student reads 18 pages every day for 7 days. Find the total pages read.
+pages_reads= 18
+days = 7
+total_pages_reads = pages_reads*days
+print(total_pages_reads) # 126
+12.
+A school has 720 students arranged equally into 12 classrooms. How many students are in each classroom?
+students = 720
+classrooms = 12
+students_per_class = students // classrooms
+print(students_per_class) # 60
+13.
+A customer buys 3 shirts costing ₹650 each and gets a ₹200 discount. Find the final bill.
+shirts = 3
+shirt_cost = 650
+discount = 200
+final_bill = (shirts*shirt_cost) - discount
+print(final_bill) # 1750
+14.
+A company gives an employee a salary of ₹30,000 and a bonus of ₹5,000. Find the total income.
+salary = 30000
+bonus = 5000
+total_income = salary + bonus
+print(total_income) # 35000
+15.
+A cricket player scores 12 runs in each over for 5 overs. Find the total runs scored.
+score = 12
+overs  = 5
+total_runs = score*overs
+print(total_runs) # 60
+________________
+Assignment Operators (=, +=, -=, *=, /=, //=, %=, **=)
+16.
+Ravi has ₹1000 in his wallet. He receives ₹250 from his friend. Update the wallet balance using an assignment operator.
+wallet = 1000
+wallet += 250
+print(wallet)# 1250
+
+
+17.
+A library has 500 books. It purchases 75 new books. Update the total number of books.
+books = 500
+books += 75
+print(books) # 575
+
+
+18.
+A shop has 120 biscuits in stock. It sells 35 biscuits. Update the remaining stock.
+biscuits = 120
+biscuits -= 35
+print(biscuits) # 85
+19.
+A student has 15 points in a game. He earns 10 more points. Update his score.
+points = 15
+points += 10
+print(points) # 25
+
+
+20.
+A company has 40 employees. The company hires 5 times more employees for a project. Update the employee count using an assignment operator.
+emps = 40
+emps *= 5
+print(emps) # 200
+21.
+A class has 180 students. They are divided equally into 6 groups. Update the value using a division assignment operator.
+students = 180
+students /= 6
+print(students) # 30.0
+22.
+A warehouse contains 500 items. They are packed into boxes of 12 items each. Update the number of complete boxes using floor division assignment.
+items = 500
+items //= 12
+print(items) # 41
+23.
+A teacher has 68 pencils. After giving equal pencils to 6 students, update the remaining pencils using the modulus assignment operator.
+pencils = 68
+pencils %= 6
+print(pencils) # 2
+24.
+A number is 5. Update it to its square using the exponent assignment operator.
+num = 5
+num **= 2
+print(num) # 25
+25.
+A mobile phone battery is 100% charged. After using the phone, the battery drops by 28%. Update the battery percentage.
+charge = 100
+charge -= 28
+print(charge) # 72
+26.
+A game character has 50 health points. A health potion increases health by 20 points. Update the health.
+points = 50
+points += 20
+print(points) # 70
+27.
+A savings account contains ₹5000. The account balance doubles after a special reward. Update the balance.
+amount = 5000
+amount *= 2
+print(amount) # 10000
+28.
+A printer has 240 sheets of paper. It prints 48 sheets. Update the remaining sheets.
+paper_sheets = 240
+paper_sheets -= 48
+print(paper_sheets) #192
+29.
+A student has 60 attendance points. He gains 15 bonus attendance points. Update the total attendance.
+attendance = 60
+attendance += 15
+print(attendance) # 75
+30.
+A company's profit is ₹80,000. The company earns an additional ₹20,000 this month. Update the profit using an assignment operator.
+profit = 80000
+profit += 20000
+print(profit) # 100000
+Medium Questions
+Arithmetic Operators
+Q1. Online Shopping
+A customer buys 5 T-shirts, each costing ₹450. Shipping charges are ₹120.
+* Calculate the total bill.
+shirts = 5
+shirt_cost = 450
+shipping_charges = 120
+total_bill = shirts+shirt_cost+shipping_charges
+print(total_bill) # 575
+
+
+________________
+
+
+Q2. Student Marks
+A student scored 78, 85, 91, 67, and 89 in five subjects.
+* Find the average marks.
+print(78+85+91+67+89 / 5) # 338.8
+________________
+
+
+Q3. Pizza Party
+There are 8 pizzas, each having 6 slices.
+If 9 friends share them equally,
+* How many slices does each person get?
+pizzas = 8
+slices = 6
+friends = 9
+total_slices_per_person = (pizzas*slices) // friends
+print(total_slices_per_person) # 5
+* How many slices remain?
+pizzas = 8
+slices = 6
+friends = 9
+total_slices_per_person = (pizzas*slices) % friends
+print(total_slices_per_person) # 3
+________________
+
+
+Q4. Bike Mileage
+A bike travels 360 km using 12 liters of petrol.
+* Calculate the mileage (km per liter).
+distance_in_km = 360
+petrol_used_in_liters = 12
+mileage = distance_in_km // petrol_used_in_liters
+print(mileage) # 30
+________________
+
+
+Q5. Salary Increment
+An employee earns ₹48,000 per month.
+The company gives a 12% salary increment.
+* Calculate the increment amount.
+salary = 48000
+increment = 12/100
+incremented_amount = salary * (12/100)
+print(incremented_amount) # 5760.0
+* Find the new salary.
+salary = 48000
+increment = 12/100
+incremented_amount = salary * (12/100)
+new_salary = salary + incremented_amount
+print(new_salary) # 53760.0
+________________
+
+
+Q6. Cricket Match
+A batsman scored 245 runs in 6 matches.
+* Find the average runs per match.
+             score = 245
+matches = 6
+avg_runs_per_match = score // matches
+print(avg_runs_per_match) # 40
+
+
+________________
+
+
+Q7. Electricity Bill
+Electricity costs ₹8 per unit.
+A house consumed 325 units.
+* Calculate the total electricity bill.
+bill_per_unit = 8
+consumed_units = 325
+total_bill = consumed_units * bill_per_unit
+print(total_bill) # 2600
+________________
+
+
+Q8. Classroom Arrangement
+There are 137 students.
+Each classroom can accommodate 30 students.
+* How many classrooms are completely filled?
+students = 137
+students_per_class = 30
+total_classrooms = students // students_per_class
+print(total_classrooms) # 4
+* How many students are left for another classroom?
+students = 137
+students_per_class = 30
+students_for_new_classroom = students % students_per_class
+print(students_for_new_classroom) # 17
+________________
+
+
+Q9. Library Fine
+A library charges ₹12 per day for late returns.
+A student returns the book 9 days late.
+* Calculate the total fine.
+late_charges_per_book = 12
+books = 9
+total_fine = late_charges_per_book * books
+print(total_fine) #   108
+________________
+
+
+Q10. Festival Discount
+A mobile phone costs ₹35,000.
+A 15% discount is offered.
+* Calculate the discount amount.
+mobile = 35000
+discount = 15/100
+discount_amount = mobile * discount
+print(discount_amount) #5250
+* Find the final price.
+mobile = 35000
+discount = 15/100
+discount_amount = mobile * discount
+final_price = mobile - discount_amount
+print(final_price) #29750.0
+________________
+
+
+Q11. Water Tank
+A water tank holds 2500 liters.
+Every day 185 liters are used.
+* After 7 days, how much water remains?
+water_in_liters = 2500
+water_used_in_liters = 185
+water_after_7days = water_used_in_liters * 7
+print(water_after_7days) # 1295
+remaining_water = water_in_liters - water_after_7days
+print(remaining_water) # 1205 
+________________
+
+
+Q12. Bakery
+A bakery makes 145 cookies.
+They pack them into boxes containing 12 cookies each.
+* How many full boxes are made?
+* How many cookies are left?
+Cookies = 145
+Per_box = 12
+Boxes = Cookies // per_box
+Remaining = Cookies % Per_box
+print(Boxes)# 12
+print(Remaining) #1
+________________
+
+
+Q13. Distance Covered
+A runner completes 7 laps.
+Each lap is 425 meters.
+* Calculate the total distance in meters and kilometers.
+Laps = 7
+Each_lap = 425
+Total_distance = Laps*Each_lap
+print(Total_distance)
+________________
+
+
+Assignment Operators
+Q14. Bank Account
+A bank account has ₹15,000.
+The customer deposits ₹3,500.
+* Update the balance using an assignment operator.
+amount = 15000
+amount += 3500
+print(amount) #18500
+________________
+
+
+Q15. ATM Withdrawal
+An account has ₹25,000.
+The customer withdraws ₹7,500.
+* Update the balance.
+ac_amount = 25000
+ac_amount -= 7500
+print(ac_amount) #17500
+
+
+________________
+
+
+Q16. Grocery Store
+A grocery shop has 120 rice bags.
+Another 35 bags arrive.
+Then 42 bags are sold.
+* Update the stock after each operation.
+ricebags = 120
+ricebags += 35
+print(ricebags) #155
+ricebags -= 42
+print(ricebags) #113
+
+
+________________
+
+
+Q17. Game Points
+A player starts with 850 points.
+He earns 250 points.
+Later, he loses 180 points.
+Finally, his score doubles.
+* Update the score after every event.
+points = 850
+points += 250
+print(points) #1100
+points -= 180
+print(points) #920
+points *= 2
+print(points) #1840
+________________
+
+
+Q18. School Attendance
+A class has 55 students.
+Today 6 students are absent.
+Tomorrow 2 more students are absent.
+* Update the attendance count.
+students = 55
+students -= 6
+print(students) #49
+students -= 2
+print(students) #47
+________________
+
+
+Q19. Water Bottle
+A bottle contains 2 liters of water.
+A person drinks 0.4 liters.
+Then fills 1.2 liters.
+* Update the water level.
+water_in_liters = 2
+water_in_liters -= 0.4
+print(water_in_liters) #1.6
+water_in_liters += 1.2
+print(water_in_liters) #2.8
+________________
+
+
+Q20. Warehouse
+A warehouse stores 500 boxes.
+The quantity is divided equally among 5 branches.
+* Update the number of boxes using an assignment operator.
+boxes = 500
+boxes //= 5
+print(boxes) # 100 
+________________
+
+
+Q21. Mobile Data
+A user has 6 GB of internet data.
+They use 1.5 GB, then recharge 3 GB.
+* Update the remaining data.
+internet_in_gb = 6
+internet_in_gb -=1.5
+internet_in_gb += 3
+print(internet_in_gb) #7.5
+________________
+
+
+Q22. Savings Goal
+A person has saved ₹12,000.
+Every month, they save ₹2,500.
+Continue this process for 4 months using assignment operators.
+* Find the final savings.
+Savings = 12000
+Savings += 2500
+Savings +=2500
+Savings +=2500
+savings+=2500
+print(Savings) # 22000 
+________________
+
+
+Q23. Company Shares
+An investor owns 80 shares.
+He buys 25 more and later sells 18 shares.
+* Update the number of shares after each transaction.
+shares = 80
+shares += 25
+print(shares) #105
+shares -= 18
+print(shares) #87
+________________
+
+
+Q24. Fuel in Car
+A car has 45 liters of fuel.
+It consumes 18 liters during a trip.
+Then the driver refuels 22 liters.
+* Update the fuel level after each step.
+fuel_in_liters = 45
+trip = 18
+consumed_fuel = fuel_in_liters - trip
+print(consumed_fuel) #27
+refuel = 22
+total_fuel_in_liters = consumed_fuel + refuel
+print(total_fuel_in_liters) #49
+________________
+
+
+Q25. Mobile Wallet
+A digital wallet contains ₹2,000.
+The user:
+* Adds ₹500
+wallet = 2000
+wallet += 500
+print(wallet) #2500
+* Spends ₹650
+wallet -= 650
+print(wallet) #1850
+* Receives ₹1,200 cashback
+wallet += 1200
+print(wallet) #3050
+* Pays ₹450 for a recharge
+wallet -= 450
+print(wallet) #2600
+Update the wallet balance after every transaction using assignment operators.
+________________
+
+
+Challenge Questions (Mixed Arithmetic + Assignment)
+Q26. Movie Ticket Booking
+A family buys 4 tickets, each costing ₹180.
+They get a ₹100 cashback after payment.
+Update the wallet balance if it initially contains ₹2,000.
+wallet = 2000
+tickets = 4
+ticket_cost = 180
+print(wallet - (tickets*ticket_cost)) # 1280
+wallet += 100
+print(wallet) #1380
+________________
+
+
+Q27. Online Course
+A course costs ₹7,500.
+A student receives a 20% scholarship.
+He pays the remaining amount from his wallet containing ₹10,000.
+Update the wallet balance.
+wallet = 10000
+course_cost = 7500
+scholarship  =  course_cost * (20/100)
+payable_amount = course_cost - scholarship
+wallet -= payable_amount
+print(wallet) # 4000.0
+________________
+
+
+Q28. Restaurant Bill Split
+Five friends order food worth ₹3,850.
+A 10% discount is applied.
+They split the bill equally.
+Calculate each person's contribution.
+friends = 5
+food_cost = 3850
+food_cost -= (10/100)
+cost_per_person = food_cost / friends
+print(cost_per_person) # 769.98
+
+
+________________
+
+
+Q29. Library Membership
+Membership fee is ₹1,200.
+A student pays ₹500 as advance.
+Update the remaining amount to be paid.
+fee = 1200
+fee -=500
+print(fee) #700
+________________
+
+
+Q30. E-commerce Wallet
+A user has ₹5,000 in their wallet.
+They:
+* Buy a headphone for ₹1,850  
+* Receive ₹300 cashback
+* Buy a mouse for ₹750
+* Add ₹2,000 to the wallet
+Update the wallet balance after each transaction using assignment operators.
+wallet = 5000
+wallet -= 1850
+print(wallet) #3150
+wallet += 300
+print(wallet) #3450
+wallet -= 750
+print(wallet) #2700
+wallet += 2000
+print(wallet) # 4700
