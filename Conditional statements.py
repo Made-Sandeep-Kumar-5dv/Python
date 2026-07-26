@@ -1,11 +1,11 @@
 # 1. Check whether a number is positive, negative, or zero 
 num = int(input('enter number:'))
 if num>0:
-    print(num,"positive")
+    print("positive")
 elif num<0:
-    print(num,"negative")
+    print("negative")
 else:
-    print(num,"zero")
+    print("zero")
 
 
 # 2. Check whether a number is even or odd  
@@ -20,9 +20,9 @@ else:
 num1 =int(input('enter first number:'))
 num2 =int(input('enter second number:'))
 if num1>num2:
-    print(num1,"largest")
+    print("largest")
 else:
-    print(num2,"largest") 
+    print("largest") 
 
 
 # 4. Find the largest of three numbers  
