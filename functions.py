@@ -54,11 +54,14 @@ square_p(4)
 # Create a function that prints a right-angled triangle of stars.
 def square_p(n):
     for i in range(1,n+1):
+        spaces = ''
+        for j in range(n-i):
+            spaces += '  '
         stars = ''
-        for j in range(1,i+1):
+        for k in range(1,i+1):
             stars += '* '
-        print(stars)
-square_p(4)
+        print(spaces+stars)
+square_p(5)
 
 # Create a function that prints the message "Welcome to Python Programming".
 def greet():
