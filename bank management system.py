@@ -23,7 +23,7 @@ def check_balance(balance):
     return balance
 
 def menu():
-    balance = 1000.0
+    balance = 50000.0
     while True:
         print("===== BANK MANAGEMENT SYSTEM =====")
         print("1. Deposit")
